@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.proyecto_santiago.Controlador"
+            styleClass="root-pane">
+
+    <top>
+
+        <HBox spacing="12"
+              alignment="CENTER_LEFT"
+              styleClass="toolbar-box">
+
+            <padding>
+                <Insets top="15"
+                        right="15"
+                        bottom="15"
+                        left="15"/>
+            </padding>
+
+            <Button text="✏ Lápiz"
+                    onAction="#usePencil"
+                    styleClass="tool-button"/>
+
+            <Button text="🧽 Borrador"
+                    onAction="#useEraser"
+                    styleClass="tool-button"/>
+
+            <Button text="▭ Rectángulo"
+                    onAction="#useRectangle"
+                    styleClass="tool-button"/>
+
+            <Button text="◯ Círculo"
+                    onAction="#useCircle"
+                    styleClass="tool-button"/>
+
+            <Button text="／ Línea"
+                    onAction="#useLine"
+                    styleClass="tool-button"/>
+
+            <Separator orientation="VERTICAL"/>
+
+            <ColorPicker fx:id="colorPicker"/>
+
+            <Slider fx:id="sizeSlider"
+                    min="1"
+                    max="30"
+                    value="3"
+                    prefWidth="150"/>
+
+            <Button text="💾 Guardar"
+                    onAction="#saveImage"
+                    styleClass="save-button"/>
+
+            <Button text="🗑 Limpiar"
+                    onAction="#clearCanvas"
+                    styleClass="clear-button"/>
+
+            <Region HBox.hgrow="ALWAYS"/>
+
+            <Label fx:id="toolLabel"
+                   text="Herramienta: Lápiz"
+                   styleClass="status-label"/>
+
+        </HBox>
+
+    </top>
+
+    <center>
+
+        <StackPane styleClass="canvas-container">
+
+            <Canvas fx:id="canvas"
+                    width="1400"
+                    height="800"/>
+
+        </StackPane>
+
+    </center>
+
+</BorderPane>

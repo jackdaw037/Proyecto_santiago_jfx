@@ -1,0 +1,103 @@
+.root-pane {
+
+    -fx-background-color:
+            linear-gradient(to bottom right,
+            #0f172a,
+            #1e293b);
+
+    -fx-font-family: "Segoe UI";
+}
+
+.toolbar-box {
+
+    -fx-background-color:
+            rgba(255,255,255,0.08);
+
+    -fx-background-radius: 18;
+
+    -fx-effect:
+            dropshadow(gaussian,
+            rgba(0,0,0,0.45),
+            20,
+            0.2,
+            0,
+            5);
+}
+
+.tool-button {
+
+    -fx-background-color:
+            linear-gradient(to bottom,
+            #334155,
+            #1e293b);
+
+    -fx-text-fill: white;
+
+    -fx-font-size: 14px;
+
+    -fx-font-weight: bold;
+
+    -fx-background-radius: 14;
+
+    -fx-padding: 12 18;
+
+    -fx-cursor: hand;
+}
+
+.tool-button:hover {
+
+    -fx-background-color:
+            linear-gradient(to bottom,
+            #3b82f6,
+            #2563eb);
+
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+.save-button {
+
+    -fx-background-color:
+            linear-gradient(to bottom,
+            #22c55e,
+            #15803d);
+
+    -fx-text-fill: white;
+
+    -fx-font-weight: bold;
+
+    -fx-background-radius: 14;
+}
+
+.clear-button {
+
+    -fx-background-color:
+            linear-gradient(to bottom,
+            #ef4444,
+            #b91c1c);
+
+    -fx-text-fill: white;
+
+    -fx-font-weight: bold;
+
+    -fx-background-radius: 14;
+}
+
+.canvas-container {
+
+    -fx-padding: 20;
+}
+
+.label {
+
+    -fx-text-fill: white;
+}
+
+.status-label {
+
+    -fx-font-size: 15px;
+
+    -fx-font-weight: bold;
+
+    -fx-text-fill: #38bdf8;
+}
